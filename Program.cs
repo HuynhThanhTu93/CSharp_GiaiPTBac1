@@ -38,19 +38,10 @@
     {
         if (a == 0)
         {
-            if (b == 0)
-            {
-              return "Phương trình vô số nghiệm";
-            }
-            else
-            {
-              return "Phương trình vô nghiệm";
-            }
+            if (b == 0) return "Phương trình vô số nghiệm";
+            else return "Phương trình vô nghiệm";
         }
-        else
-        {
-           return "Phương trình có 1 nghiệm là "  + Math.Round((-b / a), 2).ToString();
-        }
+        else return "Phương trình có 1 nghiệm là "  + Math.Round((-b / a), 2).ToString();       
     }
 
 }
